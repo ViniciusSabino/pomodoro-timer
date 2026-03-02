@@ -1,8 +1,13 @@
 import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, NavigationProp } from "@react-navigation/native";
 
 import { Home } from "../pages/Home";
 import { Settings } from "../pages/Settings";
+
+type ScreenDefinitions = {
+  Home: undefined;
+  Settings: undefined;
+};
 
 const Stack = createStackNavigator();
 
@@ -16,3 +21,5 @@ export function AppRoutes() {
     </NavigationContainer>
   );
 }
+
+export type TNavigationScreenProps = NavigationProp<ScreenDefinitions>;

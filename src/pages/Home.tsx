@@ -1,8 +1,9 @@
 import { useNavigation } from "@react-navigation/native";
 import { View, Text, TouchableOpacity } from "react-native";
+import { TNavigationScreenProps } from "../app/AppRoutes";
 
 export const Home = () => {
-  const navigation = useNavigation<any>();
+  const navigation = useNavigation<TNavigationScreenProps>();
 
   return (
     <View>
