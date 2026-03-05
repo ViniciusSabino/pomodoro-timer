@@ -27,7 +27,7 @@ export function App() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: Theme.colors.background }}>
       <StatusBar style="light"></StatusBar>
-      <AppRoutes></AppRoutes>;
+      <AppRoutes></AppRoutes>
     </SafeAreaView>
   );
 }
